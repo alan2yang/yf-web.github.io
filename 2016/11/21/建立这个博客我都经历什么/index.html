@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+  <title>建立这个博客我都经历什么 | YF&#39;s Blog | 不务正业者</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  <meta name="keywords" content="hexo,indigo">
+  <meta name="description" content="各种安装和注册
+安装nodejs：很简单，自己Google安装方法；
+安装Git：同上，另外要将本地Git和远程GitHub连接起来；
+安装hexo：同上；
+注册GitHub：同上。
+
+其实网上有很多教程了，大同小异，我这里放几个仅供参考。
+
+Crossin的编程教室
+手把手教你使用Hexo + Github Pages搭建个人独立博客
+使用hexo+github搭建静态博客
+
+先使用默认主题试试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建立这个博客我都经历什么">
+<meta property="og:url" content="http://yf-web.github.io/2016/11/21/建立这个博客我都经历什么/index.html">
+<meta property="og:site_name" content="YF's Blog">
+<meta property="og:description" content="各种安装和注册
+安装nodejs：很简单，自己Google安装方法；
+安装Git：同上，另外要将本地Git和远程GitHub连接起来；
+安装hexo：同上；
+注册GitHub：同上。
+
+其实网上有很多教程了，大同小异，我这里放几个仅供参考。
+
+Crossin的编程教室
+手把手教你使用Hexo + Github Pages搭建个人独立博客
+使用hexo+github搭建静态博客
+
+先使用默认主题试试">
+<meta property="og:image" content="http://yf-web.github.io/images/sp161121_214116.png">
+<meta property="og:image" content="http://yf-web.github.io/images/sp161121_213945.png">
+<meta property="og:updated_time" content="2016-11-22T00:59:50.996Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="建立这个博客我都经历什么">
+<meta name="twitter:description" content="各种安装和注册
+安装nodejs：很简单，自己Google安装方法；
+安装Git：同上，另外要将本地Git和远程GitHub连接起来；
+安装hexo：同上；
+注册GitHub：同上。
+
+其实网上有很多教程了，大同小异，我这里放几个仅供参考。
+
+Crossin的编程教室
+手把手教你使用Hexo + Github Pages搭建个人独立博客
+使用hexo+github搭建静态博客
+
+先使用默认主题试试">
+<meta name="twitter:image" content="http://yf-web.github.io/images/sp161121_214116.png">
+  
+  <meta name="summary" content="不务正业的时候学学编程">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css?v=1.1.12">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/images/logo/9548.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">yf</h5>
+          <a href="mailto:yf_web@163.com" title="yf_web@163.com" class="mail">yf_web@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章列表
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/aboutme"  >
+                <i class="icon icon-lg icon-male"></i>
+                关于我
+              </a>
+            </li>
+        
+      </ul>
+
+      <footer class="footer">
+  <!--注释这一句<p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>-->
+  <p>YF&#39;s Blog &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> theme
+ <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a> and <a href="https://github.com" target="_blank">Github</a>!</p>
+  <!-- 注释这一句<a href="undefined" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a> -->
+</footer>
+
+    </div>
+  </div>
+</aside>
+
+  <main id="main">
+    <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">建立这个博客我都经历什么</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container">
+        <h1 class="title">建立这个博客我都经历什么</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2016-11-21T12:43:51.000Z" itemprop="datePublished" class="page-time">
+  2016-11-21
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#各种安装和注册"><span class="post-toc-number">1.</span> <span class="post-toc-text">各种安装和注册</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#先使用默认主题试试"><span class="post-toc-number">2.</span> <span class="post-toc-text">先使用默认主题试试</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#个性化，做你自己的hexo配置，不是主题的配置"><span class="post-toc-number">3.</span> <span class="post-toc-text">个性化，做你自己的hexo配置，不是主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题的配置"><span class="post-toc-number">4.</span> <span class="post-toc-text">主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#部署到远端"><span class="post-toc-number">5.</span> <span class="post-toc-text">部署到远端</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-建立这个博客我都经历什么" 
+  class="post-article article-type-post" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">建立这个博客我都经历什么</h1>
+        <div class="post-meta">
+            <time datetime="2016-11-21T12:43:51.000Z" itemprop="datePublished" class="post-time">
+  2016-11-21
+</time>
+
+            
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="各种安装和注册"><a href="#各种安装和注册" class="headerlink" title="各种安装和注册"></a>各种安装和注册</h2><ol>
+<li>安装nodejs：很简单，自己Google安装方法；</li>
+<li>安装Git：同上，另外要将本地Git和远程GitHub连接起来；</li>
+<li>安装hexo：同上；</li>
+<li>注册GitHub：同上。</li>
+</ol>
+<p>其实网上有很多教程了，大同小异，我这里放几个仅供参考。</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/22191919" target="_blank" rel="external">Crossin的编程教室</a></li>
+<li><a href="http://jiji262.github.io/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="external">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></li>
+<li><a href="http://qiutc.me/post/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2.html" target="_blank" rel="external">使用hexo+github搭建静态博客</a></li>
+</ul>
+<h2 id="先使用默认主题试试"><a href="#先使用默认主题试试" class="headerlink" title="先使用默认主题试试"></a>先使用默认主题试试</h2><p>以上都完成后就可以试着用默认主题建立自己的博客，当然刚刚开始在本地进行修改和调试就可以。</p>
+<p>说几点我遇到的问题吧：</p>
+<ol>
+<li><p>其实</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate <span class="comment">#等于hexo g</span></div><div class="line">hexo server <span class="comment">#等于hexo s</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>本地端口4000（默认端口）可能被占用，所以会用到<code>hexo s -p XXXX</code>这个命令是用来重新配置端口的，xxxx是新的端口号。</p>
+</li>
+<li><p>在Git中本地服务启用后可以使用快捷键 Ctrl + C 停止服务，注意它与copy的快捷键是相同的，Git shell中复制、粘贴最好用鼠标右键。</p>
+</li>
+</ol>
+<h2 id="个性化，做你自己的hexo配置，不是主题的配置"><a href="#个性化，做你自己的hexo配置，不是主题的配置" class="headerlink" title="个性化，做你自己的hexo配置，不是主题的配置"></a>个性化，做你自己的hexo配置，不是主题的配置</h2><p>就是下面的那么红框中的文件，打开它，我用的sublime text。</p>
+<p><img src="/images/sp161121_214116.png" alt="sp161121_214116"></p>
+<p>打开后其实可以参考<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo的官方文档</a>，但是说实话那里讲的很泛，实际上你需要改的内容并不是特别多。如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Hexo Configuration</span></div><div class="line"><span class="comment">## Docs: https://hexo.io/docs/configuration.html</span></div><div class="line"><span class="comment">## Source: https://github.com/hexojs/hexo/</span></div><div class="line"><span class="comment">#注释</span></div><div class="line"><span class="comment"># Site</span></div><div class="line"><span class="attr">title:</span> 博客标题</div><div class="line"><span class="attr">subtitle:</span> 子标题</div><div class="line"><span class="attr">description:</span> 描述你的网站，用于被搜索</div><div class="line"><span class="attr">author:</span> 作者</div><div class="line"><span class="attr">language:</span> zh-CN</div><div class="line"><span class="attr">timezone:</span></div><div class="line"><span class="attr">email:</span> 要写</div><div class="line"></div><div class="line"><span class="comment"># URL</span></div><div class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></div><div class="line"><span class="attr">url:</span> http://自己的博客地址</div><div class="line"><span class="attr">root:</span> /</div><div class="line"><span class="attr">permalink:</span> :year/:month/:day/:title/</div><div class="line"><span class="attr">permalink_defaults:</span></div><div class="line"></div><div class="line"><span class="comment"># Directory</span></div><div class="line"><span class="attr">source_dir:</span> source</div><div class="line"><span class="attr">public_dir:</span> public</div><div class="line"><span class="attr">tag_dir:</span> tags</div><div class="line"><span class="attr">archive_dir:</span> archives</div><div class="line"><span class="attr">category_dir:</span> categories</div><div class="line"><span class="attr">code_dir:</span> downloads/code</div><div class="line"><span class="attr">i18n_dir:</span> :lang</div><div class="line"><span class="attr">skip_render:</span></div><div class="line"></div><div class="line"><span class="comment"># Writing</span></div><div class="line"><span class="attr">new_post_name:</span> :title.md <span class="comment"># File name of new posts</span></div><div class="line"><span class="attr">default_layout:</span> post</div><div class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment"># Transform title into titlecase</span></div><div class="line"><span class="attr">external_link:</span> <span class="literal">true</span> <span class="comment"># Open external links in new tab</span></div><div class="line"><span class="attr">filename_case:</span> <span class="number">0</span></div><div class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></div><div class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span></div><div class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></div><div class="line"><span class="attr">future:</span> <span class="literal">true</span></div><div class="line"><span class="attr">highlight:</span></div><div class="line"><span class="attr">  enable:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  line_number:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  auto_detect:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  tab_replace:</span></div><div class="line"></div><div class="line"><span class="comment"># Category &amp; Tag</span></div><div class="line"><span class="attr">default_category:</span> uncategorized</div><div class="line"><span class="attr">category_map:</span></div><div class="line"><span class="attr">tag_map:</span></div><div class="line"></div><div class="line"><span class="comment"># Date / Time format</span></div><div class="line"><span class="comment">## Hexo uses Moment.js to parse and display date</span></div><div class="line"><span class="comment">## You can customize the date format as defined in</span></div><div class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></div><div class="line"><span class="attr">date_format:</span> YYYY-MM-DD</div><div class="line"><span class="attr">time_format:</span> HH:mm:ss</div><div class="line"></div><div class="line"><span class="comment"># Pagination</span></div><div class="line"><span class="comment">## Set per_page to 0 to disable pagination</span></div><div class="line"><span class="attr">per_page:</span> <span class="number">6</span>   <span class="comment">#每一页显示的文章数</span></div><div class="line"><span class="attr">pagination_dir:</span> page</div><div class="line"></div><div class="line"><span class="comment"># Extensions</span></div><div class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></div><div class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></div><div class="line"><span class="attr">theme:</span> indigo   <span class="comment">#使用的主题</span></div><div class="line"></div><div class="line"><span class="comment"># Deployment，部署的相关设置</span></div><div class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> git</div><div class="line"><span class="attr">  repository:</span> git@github.com:你的github名/你的github名.github.io.git</div><div class="line"><span class="attr">  branch:</span> master</div></pre></td></tr></table></figure>
+<p><strong>友情提醒:有些内容是必须设置的，如果自己不确定就不要随便删除，否则会在部署的时候报错，我之前手贱删了自己看不顺眼的内容，结果找了半天的问题。</strong></p>
+<h2 id="主题的配置"><a href="#主题的配置" class="headerlink" title="主题的配置"></a>主题的配置</h2><p> 进入themes文件夹打开默认主题文件夹landscape，你会看到又一个_config.yml文件，打开后进行配置。</p>
+<p> <img src="/images/sp161121_213945.png" alt="sp161121_213945"></p>
+<p>相关的配置可以到<a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="external">hexo-theme-landscape</a>或<a href="https://github.com/xiangming/landscape-plus" target="_blank" rel="external">landscape-plus</a>查看。</p>
+<h2 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h2><p>部署之前要安装一个扩展：</p>
+<p><code>npm install hexo-deployer-git --save</code></p>
+<p>否则会部署时会报错；</p>
+<p>通过Git进入到Hexo-blog文件下，输入</p>
+<p><code>hexo clean</code></p>
+<p><code>hexo g</code></p>
+<p><code>hexo d</code></p>
+<p>其中<code>hexo clean</code>命令不用每次部署的时候都使用它，它相当于清空generate生成的文件，不是特别大的修改可以不用clean。</p>
+<p><strong>饶坑：一般比较大的更新本地或远端的文件时都会使用上面三条命令，但是有时候即使采用上述命令也报错。例如我遇到的git提交失败的问题，这时可以手动删除public文件夹和.deploy_git文件夹，然后再使用hexo d -g命令（是hexo g  和hexo d 的合体） </strong></p>
+
+        </div>
+        
+        <blockquote class="post-copyright">
+    <div class="content">
+        转载请注明出处：<a href="/2016/11/21/建立这个博客我都经历什么/" target="_blank" rel="external">http://yf-web.github.io/2016/11/21/建立这个博客我都经历什么/</a> 谢谢！
+    </div>
+    <footer>
+        <a href="http://yf-web.github.io">
+            <img src="/images/logo/9548.jpg" alt="yf">
+            yf
+        </a>
+    </footer>
+</blockquote>
+        
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/indigo/">indigo</a></li></ul>
+
+
+            
+<div class="post-share-wrap">
+    <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+    <a href="javascript:;" id="share-fab" class="post-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>   
+
+    
+
+            
+    
+
+
+
+</article>
+
+
+</div>
+
+  </main>
+  <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>var BLOG = { ROOT: '/' };
+BLOG.SHARE = {
+title: "建立这个博客我都经历什么",
+summary: document.getElementsByName('summary')[0].content,
+url: "http://yf-web.github.io/2016/11/21/建立这个博客我都经历什么/" }
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+  <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script src="/js/main.min.js?v=1.1.12"></script>
+
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.1.12"></script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
