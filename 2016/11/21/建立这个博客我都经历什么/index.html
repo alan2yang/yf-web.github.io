@@ -42,7 +42,7 @@ Crossin的编程教室
 先使用默认主题试试">
 <meta property="og:image" content="http://yf-web.github.io/images/sp161121_214116.png">
 <meta property="og:image" content="http://yf-web.github.io/images/sp161121_213945.png">
-<meta property="og:updated_time" content="2016-11-22T00:59:50.996Z">
+<meta property="og:updated_time" content="2016-11-24T04:49:19.470Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="建立这个博客我都经历什么">
 <meta name="twitter:description" content="各种安装和注册
@@ -179,7 +179,7 @@ Crossin的编程教室
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#各种安装和注册"><span class="post-toc-number">1.</span> <span class="post-toc-text">各种安装和注册</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#先使用默认主题试试"><span class="post-toc-number">2.</span> <span class="post-toc-text">先使用默认主题试试</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#个性化，做你自己的hexo配置，不是主题的配置"><span class="post-toc-number">3.</span> <span class="post-toc-text">个性化，做你自己的hexo配置，不是主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题的配置"><span class="post-toc-number">4.</span> <span class="post-toc-text">主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#部署到远端"><span class="post-toc-number">5.</span> <span class="post-toc-text">部署到远端</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#各种安装和注册"><span class="post-toc-number">1.</span> <span class="post-toc-text">各种安装和注册</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#先使用默认主题试试"><span class="post-toc-number">2.</span> <span class="post-toc-text">先使用默认主题试试</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#个性化，做你自己的hexo配置，不是主题的配置"><span class="post-toc-number">3.</span> <span class="post-toc-text">个性化，做你自己的hexo配置，不是主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题的配置"><span class="post-toc-number">4.</span> <span class="post-toc-text">主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#部署到远端"><span class="post-toc-number">5.</span> <span class="post-toc-text">部署到远端</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#换主题"><span class="post-toc-number">6.</span> <span class="post-toc-text">换主题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#几个点"><span class="post-toc-number">7.</span> <span class="post-toc-text">几个点</span></a></li></ol>
         </nav>
     </aside>
     
@@ -236,8 +236,17 @@ Crossin的编程教室
 <p><code>hexo clean</code></p>
 <p><code>hexo g</code></p>
 <p><code>hexo d</code></p>
+<p>其实<code>hexo g</code>和<code>hexo d</code>可以合并为<code>hexo d -g</code>。</p>
 <p>其中<code>hexo clean</code>命令不用每次部署的时候都使用它，它相当于清空generate生成的文件，不是特别大的修改可以不用clean。</p>
-<p><strong>饶坑：一般比较大的更新本地或远端的文件时都会使用上面三条命令，但是有时候即使采用上述命令也报错。例如我遇到的git提交失败的问题，这时可以手动删除public文件夹和.deploy_git文件夹，然后再使用hexo d -g命令（是hexo g  和hexo d 的合体） </strong></p>
+<p><strong>饶坑：一般比较大的更新本地或远端的文件时都会使用上面三条命令，但是有时候即使采用上述命令也报错。例如我遇到的git提交失败的问题，这时可以手动删除public文件夹和.deploy_git文件夹，然后再使用hexo d -g命令。 </strong></p>
+<h2 id="换主题"><a href="#换主题" class="headerlink" title="换主题"></a>换主题</h2><p>更换主题的教程网上也有很多，很简单：git下载-修改hexo的配置文件-修改对应主题下的配置文件。</p>
+<p>只是这里需要注意的问题是更换主题之后部署到远端可能不能成功，解决办法见上面的饶坑。</p>
+<h2 id="几个点"><a href="#几个点" class="headerlink" title="几个点"></a>几个点</h2><ol>
+<li><p>博客整体的框架搭建好后，部署到远端也没有问题之后，可能要进行页面小细节上的修改，如：头像的修改，主页选项的修改，footer的修改等。这些修改都是在本主题文件夹下的文件进行修改和设置。</p>
+<p>首先就是对应主题文件夹下的_config.yml文件的配置，这就要查看官方文档了，在GitHub上找到对应项目的文档进行设置。</p>
+<p>另外就是对页面的显示进行设置，如：配色，footer下的版权等（当然这里说的都是一些简单设置，如果要进行更深入的修改和个性化设置，请仔细阅读官方开发文档）。页面结构的修改就在各个主题下的layout文件夹里，可以在博客页面使用F12来分析页面结构，在layout文件夹下找到对应的文件从而进行修改。</p>
+</li>
+</ol>
 
         </div>
         
