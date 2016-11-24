@@ -42,7 +42,7 @@ Crossin的编程教室
 先使用默认主题试试">
 <meta property="og:image" content="http://yf-web.github.io/images/sp161121_214116.png">
 <meta property="og:image" content="http://yf-web.github.io/images/sp161121_213945.png">
-<meta property="og:updated_time" content="2016-11-24T05:06:35.362Z">
+<meta property="og:updated_time" content="2016-11-24T05:11:31.713Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="建立这个博客我都经历什么">
 <meta name="twitter:description" content="各种安装和注册
@@ -179,7 +179,7 @@ Crossin的编程教室
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#各种安装和注册"><span class="post-toc-number">1.</span> <span class="post-toc-text">各种安装和注册</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#先使用默认主题试试"><span class="post-toc-number">2.</span> <span class="post-toc-text">先使用默认主题试试</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#个性化，做你自己的hexo配置，不是主题的配置"><span class="post-toc-number">3.</span> <span class="post-toc-text">个性化，做你自己的hexo配置，不是主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题的配置"><span class="post-toc-number">4.</span> <span class="post-toc-text">主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#部署到远端"><span class="post-toc-number">5.</span> <span class="post-toc-text">部署到远端</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#各种安装和注册"><span class="post-toc-number">1.</span> <span class="post-toc-text">各种安装和注册</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#先使用默认主题试试"><span class="post-toc-number">2.</span> <span class="post-toc-text">先使用默认主题试试</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#个性化，做你自己的hexo配置，不是主题的配置"><span class="post-toc-number">3.</span> <span class="post-toc-text">个性化，做你自己的hexo配置，不是主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主题的配置"><span class="post-toc-number">4.</span> <span class="post-toc-text">主题的配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#部署到远端"><span class="post-toc-number">5.</span> <span class="post-toc-text">部署到远端</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#换主题"><span class="post-toc-number">6.</span> <span class="post-toc-text">换主题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#几个点"><span class="post-toc-number">7.</span> <span class="post-toc-text">几个点</span></a></li></ol>
         </nav>
     </aside>
     
@@ -230,9 +230,27 @@ Crossin的编程教室
 <p> <img src="/images/sp161121_213945.png" alt="sp161121_213945"></p>
 <p>相关的配置可以到<a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="external">hexo-theme-landscape</a>或<a href="https://github.com/xiangming/landscape-plus" target="_blank" rel="external">landscape-plus</a>查看。</p>
 <h2 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h2><p>部署之前要安装一个扩展：</p>
-<figure class="highlight plain"><figcaption><span>install hexo-deployer-git --save```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">否则会部署时会报错；</div><div class="line"></div><div class="line">通过Git进入到Hexo-blog文件下，输入</div><div class="line"></div><div class="line">`hexo clean `</div><div class="line"></div><div class="line">`hexo g`</div><div class="line"></div><div class="line">`hexo d`</div><div class="line"></div><div class="line">其实`hexo g`和`hexo d`可以合并为`hexo d -g`。</div><div class="line"></div><div class="line">其中`hexo clean`命令不用每次部署的时候都使用它，它相当于清空generate生成的文件，不是特别大的修改可以不用clean。</div><div class="line"></div><div class="line">**饶坑：一般比较大的更新本地或远端的文件时都会使用上面三条命令，但是有时候即使采用上述命令也报错。例如我遇到的git提交失败的问题，这时可以手动删除public文件夹和.deploy_git文件夹，然后再使用hexo d -g命令。 **</div><div class="line"></div><div class="line">## 换主题</div><div class="line"></div><div class="line">更换主题的教程网上也有很多，很简单：git下载-修改hexo的配置文件-修改对应主题下的配置文件。</div><div class="line"></div><div class="line">只是这里需要注意的问题是更换主题之后部署到远端可能不能成功，解决办法见上面的饶坑。</div><div class="line"></div><div class="line">## 几个点</div><div class="line"></div><div class="line">1. 博客整体的框架搭建好后，部署到远端也没有问题之后，可能要进行页面小细节上的修改，如：头像的修改，主页选项的修改，footer的修改等。这些修改都是在本主题文件夹下的文件进行修改和设置。</div><div class="line"></div><div class="line">   首先就是对应主题文件夹下的_config.yml文件的配置，这就要查看官方文档了，在GitHub上找到对应项目的文档进行设置。</div><div class="line"></div><div class="line">   另外就是对页面的显示进行设置，如：配色，footer下的版权等（当然这里说的都是一些简单设置，如果要进行更深入的修改和个性化设置，请仔细阅读官方开发文档）。页面结构的修改就在各个主题下的layout文件夹里，可以在博客页面使用F12来分析页面结构，在layout文件夹下找到对应的文件从而进行修改。</div><div class="line"></div><div class="line">2. 本地图片的引用问题。网络上图片的引用咱们就不提了，本地图片的引用则是通过相对路径进行引用的，需要在hexo下的source文件夹下建立一个文件夹可以命名为images，所要用到的图片就放在其中。假设要引用其中的logo.jpg文件则使用</div><div class="line"></div><div class="line">```markdown</div><div class="line">   ![图片](/images/logo.jpg)</div></pre></td></tr></table></figure>
+<p><code>npm install hexo-deployer-git --save</code></p>
+<p>否则会部署时会报错；</p>
+<p>通过Git进入到Hexo-blog文件下，输入</p>
+<p><code>hexo clean</code></p>
+<p><code>hexo g</code></p>
+<p><code>hexo d</code></p>
+<p>其实<code>hexo g</code>和<code>hexo d</code>可以合并为<code>hexo d -g</code>。</p>
+<p>其中<code>hexo clean</code>命令不用每次部署的时候都使用它，它相当于清空generate生成的文件，不是特别大的修改可以不用clean。</p>
+<p><strong>饶坑：一般比较大的更新本地或远端的文件时都会使用上面三条命令，但是有时候即使采用上述命令也报错。例如我遇到的git提交失败的问题，这时可以手动删除public文件夹和.deploy_git文件夹，然后再使用hexo d -g命令。 </strong></p>
+<h2 id="换主题"><a href="#换主题" class="headerlink" title="换主题"></a>换主题</h2><p>更换主题的教程网上也有很多，很简单：git下载-修改hexo的配置文件-修改对应主题下的配置文件。</p>
+<p>只是这里需要注意的问题是更换主题之后部署到远端可能不能成功，解决办法见上面的饶坑。</p>
+<h2 id="几个点"><a href="#几个点" class="headerlink" title="几个点"></a>几个点</h2><ol>
+<li><p>博客整体的框架搭建好后，部署到远端也没有问题之后，可能要进行页面小细节上的修改，如：头像的修改，主页选项的修改，footer的修改等。这些修改都是在本主题文件夹下的文件进行修改和设置。</p>
+<p>首先就是对应主题文件夹下的_config.yml文件的配置，这就要查看官方文档了，在GitHub上找到对应项目的文档进行设置。</p>
+<p>另外就是对页面的显示进行设置，如：配色，footer下的版权等（当然这里说的都是一些简单设置，如果要进行更深入的修改和个性化设置，请仔细阅读官方开发文档）。页面结构的修改就在各个主题下的layout文件夹里，可以在博客页面使用F12来分析页面结构，在layout文件夹下找到对应的文件从而进行修改。</p>
+</li>
+<li><p>本地图片的引用问题。网络上图片的引用咱们就不提了，本地图片的引用则是通过相对路径进行引用的，需要在hexo下的source文件夹下建立一个文件夹可以命名为images，所要用到的图片就放在其中。假设要引用其中的logo.jpg文件则使用</p>
+</li>
+</ol>
+<p><code>![图片](/images/logo.jpg)</code></p>
 <p>   虽然本地浏览文档时看不到图片但是部署在远端之后是可以看见的。</p>
-<p>   ​</p>
 
         </div>
         
